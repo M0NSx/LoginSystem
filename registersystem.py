@@ -37,25 +37,30 @@ def sign_in():
     email = window.lineEdit.text()
     password = window.lineEdit_2.text()
 
-    try:
-        bank = sqlite3.connect("data_user.db")
-        cursor = bank.cursor()
+    if email and password:
+        try:
+            bank = sqlite3.connect("data_user.db")
+            cursor = bank.cursor()
 
-        cursor.execute(f"SELECT password FROM data_user WHERE email='{email}'")
+            cursor.execute(f"SELECT password FROM data_user WHERE email='{email}'")
 
-        captured_password = cursor.fetchall()
+            captured_password = cursor.fetchall()
 
-        if password == captured_password[0][0]:
-            print("Joined")
-
-        else:
-            print("Failed")
+            try:
+                if password == captured_password[0][0]:
+                    print("Joined")
+                else:
+                    print("Failed")
+            except:
+                pass
     
-    except sqlite3.Error as error:
-        print(error)
+        except sqlite3.Error as error:
+            print(error)
+    else:
+        
 
     window.lineEdit.setText("")
-
+    window.lineEdit_2.setText("")
 
 def create_acc():
     name = window.lineEdit_4.text()
