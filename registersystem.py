@@ -54,6 +54,9 @@ def sign_in():
     except sqlite3.Error as error:
         print(error)
 
+    window.lineEdit.setText("")
+
+
 def create_acc():
     name = window.lineEdit_4.text()
     email = window.lineEdit_3.text()
