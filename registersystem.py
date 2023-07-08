@@ -54,6 +54,8 @@ def sign_in():
     except sqlite3.Error as error:
         print(error)
 
+def create_acc():
+
 app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
 
