@@ -58,7 +58,7 @@ def create_acc():
     name = window.lineEdit_4.text()
     email = window.lineEdit_3.text()
     password = window.lineEdit_5.text()
-    
+    confirm_password = window.lineEdit_6.text()
 
 app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
