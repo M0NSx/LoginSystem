@@ -80,7 +80,7 @@ def create_acc():
     window.lineEdit_6.setText("")
 
 app = QtWidgets.QApplication([])
-window = uic.loadUi("loginsystem.ui")
+window = uic.loadUi("Interface2.ui")
 
 window.pushButton.clicked.connect(sign_in)
 window.pushButton_3.clicked.connect(create_acc)
