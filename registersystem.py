@@ -83,6 +83,8 @@ app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
 
 window.pushButton.clicked.connect(sign_in)
+window.pushButton_3.clicked.connect(create_acc)
+
 
 window.show()
 sys.exit(app.exec_())
