@@ -57,7 +57,7 @@ def sign_in():
         except sqlite3.Error as error:
             print(error)
     else:
-        
+        print("Email and Password are required")
 
     window.lineEdit.setText("")
     window.lineEdit_2.setText("")
