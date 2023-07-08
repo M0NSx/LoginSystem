@@ -56,6 +56,7 @@ def sign_in():
 
 def create_acc():
     name = window.lineEdit_4.text()
+    email = window.lineEdit_3.text()
 
 
 app = QtWidgets.QApplication([])
