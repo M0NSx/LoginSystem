@@ -60,6 +60,9 @@ def create_acc():
     password = window.lineEdit_5.text()
     confirm_password = window.lineEdit_6.text()
 
+    error = register_new_user(name, email, password, confirm_password)
+
+
 app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
 
