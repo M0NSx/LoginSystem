@@ -55,6 +55,8 @@ def sign_in():
         print(error)
 
 def create_acc():
+    name = window.lineEdit_4.text()
+
 
 app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
