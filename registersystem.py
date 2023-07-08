@@ -69,7 +69,7 @@ def create_acc():
     window.lineEdit_4.setText("")
     window.lineEdit_3.setText("")
     window.lineEdit_5.setText("")
-
+    window.lineEdit_6.setText("")
 
 app = QtWidgets.QApplication([])
 window = uic.loadUi("loginsystem.ui")
