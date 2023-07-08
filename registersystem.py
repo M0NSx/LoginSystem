@@ -65,6 +65,8 @@ def create_acc():
         print("Successfully Registered")
     else:
         print("Register went wrong")
+        
+    window.lineEdit_4.setText("")
 
 
 app = QtWidgets.QApplication([])
