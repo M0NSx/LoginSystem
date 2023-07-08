@@ -84,6 +84,7 @@ window = uic.loadUi("loginsystem.ui")
 
 window.pushButton.clicked.connect(sign_in)
 window.pushButton_3.clicked.connect(create_acc)
+window.pushButton_2.clicked.connect(lambda: window.RegisterAcc.setCurrentWidget(window.Create_Account))
 
 
 window.show()
