@@ -64,6 +64,7 @@ def create_acc():
     if not error:
         print("Successfully Registered")
     else:
+        print("Register went wrong")
 
 
 app = QtWidgets.QApplication([])
