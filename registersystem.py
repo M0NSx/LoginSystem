@@ -61,6 +61,7 @@ def create_acc():
     confirm_password = window.lineEdit_6.text()
 
     error = register_new_user(name, email, password, confirm_password)
+    if not error:
 
 
 app = QtWidgets.QApplication([])
