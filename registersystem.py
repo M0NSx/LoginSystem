@@ -63,6 +63,7 @@ def create_acc():
     error = register_new_user(name, email, password, confirm_password)
     if not error:
         print("Successfully Registered")
+    else:
 
 
 app = QtWidgets.QApplication([])
