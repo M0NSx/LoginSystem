@@ -67,6 +67,7 @@ def create_acc():
         print("Register went wrong")
         
     window.lineEdit_4.setText("")
+    window.lineEdit_3.setText("")
 
 
 app = QtWidgets.QApplication([])
