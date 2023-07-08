@@ -68,6 +68,7 @@ def create_acc():
         
     window.lineEdit_4.setText("")
     window.lineEdit_3.setText("")
+    window.lineEdit_5.setText("")
 
 
 app = QtWidgets.QApplication([])
